@@ -4,92 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Help Gaza's Children | GazaChildHope</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f3f4f6;
+      color: #111827;
     }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
+
+    .hero {
+      background: url('https://i.imgur.com/f0eVddH.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-    }
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-    main {
+      color: white;
       padding: 20px;
-      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    .hero {
-      background: url('https://your-image-link.com/family.jpg') no-repeat center center;
-      background-size: cover;
-      height: 300px;
-      border-radius: 10px;
-      margin-bottom: 20px;
+
+    .ethan {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
     }
-    .content {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
+
+    .ethan img {
+      width: 180px;
+      height: 180px;
+      border-radius: 100px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
+
+    .ethan h3 {
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
     .wallet-box {
-      background: #eef7ee;
-      border-left: 5px solid #4caf50;
-      padding: 15px;
+      margin-top: 30px;
+      background: #e5e7eb;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      word-break: break-all;
+    }
+
+    .wallet-box strong {
+      font-size: 1.1rem;
+    }
+
+    .qr-code {
       margin-top: 20px;
-      font-size: 18px;
     }
-    .qr {
-      margin-top: 10px;
-    }
+
     footer {
+      background-color: #1f2937;
+      color: white;
       text-align: center;
       padding: 20px;
-      font-size: 14px;
-      background: #eee;
-      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #10b981;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">GazaChildHope</div>
-    <p>Helping Gaza's displaced children, one dollar at a time.</p>
-  </header>
+  <section class="hero">
+    <h1>Help Gaza's Children</h1>
+    <p>Every day, innocent children in Gaza suffer from violence, displacement, and hunger. You can make a difference — even a small donation can bring hope, food, and shelter.</p>
+  </section>
 
-  <main>
-    <div class="hero"></div>
+  <section class="section">
+    <h2 style="text-align:center;">Why You Can Trust Us</h2>
+    <p style="text-align:center;">This initiative is led by Ethan Morgan, a humanitarian volunteer who has worked with multiple relief organizations across the globe. Transparency and security are our top priorities.</p>
 
-    <div class="content">
-      <h2>Why You Can Trust Us</h2>
-      <p>
-        This initiative is led by <strong>Ethan Morgan</strong>, a humanitarian advocate and developer who has no political affiliation. All donations go directly to aid for displaced children in Gaza. We publish transparent reports and provide crypto-based tracking.
-      </p>
+    <div class="ethan">
+      <img src="https://i.imgur.com/Dq6koyh.jpg" alt="Ethan Morgan">
+      <h3>Ethan Morgan</h3>
+      <p>Founder of GazaChildHope</p>
+    </div>
 
-      <h2>Make a Direct Impact</h2>
-      <p>
-        Every $10 donation helps provide essentials like food, water, and shelter to displaced children. No middlemen. No fees.
-      </p>
-
-      <div class="wallet-box">
-        Send your donation to this TRC20 USDT address:<br>
-        <strong>TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</strong>
-        <div class="qr">
-          <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4" alt="QR Code">
-        </div>
+    <div class="wallet-box">
+      <p><strong>Donate with USDT (TRC20) to this wallet:</strong></p>
+      <p>TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</p>
+      <div class="qr-code">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4" alt="QR Code">
       </div>
     </div>
-  </main>
+  </section>
 
   <footer>
-    &copy; 2025 GazaChildHope | Contact: gazachildhope@gmail.com
+    © 2025 GazaChildHope | Contact: <a href="mailto:gazachildhope@gmail.com">gazachildhope@gmail.com</a> | Instagram: <a href="https://instagram.com/gazachildhope" target="_blank">@gazachildhope</a>
   </footer>
 
 </body>
