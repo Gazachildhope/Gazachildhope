@@ -2,130 +2,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Help Gaza's Children</title>
+  <title>GazaChildHope</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-image: url('images/child.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #333;
-    }
-
-    .overlay {
-      background-color: rgba(255,255,255,0.88);
-      min-height: 100vh;
-    }
-
-    header {
-      text-align: center;
-      padding: 80px 20px 40px 20px;
+      background-color: #f5f5f5;
       color: #222;
-      text-shadow: 0px 0px 6px #fff;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      max-width: 90%;
-      margin: auto;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .donation-box {
-      background-color: #fff;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
       text-align: center;
+      line-height: 1.6;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .main {
+      padding: 40px 20px;
+    }
+
+    .main h1 {
+      font-size: 2.2rem;
+      color: #b30000;
+      margin-bottom: 10px;
+    }
+
+    .main p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    .wallet-box {
+      background-color: #fff;
+      padding: 20px;
+      margin: 30px auto;
+      display: inline-block;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .wallet-address {
       font-family: monospace;
       background-color: #eee;
       padding: 10px;
-      border-radius: 5px;
+      border-radius: 4px;
+      margin: 15px 0;
       display: inline-block;
-      margin: 10px 0;
     }
 
-    .trust-section {
-      background-color: #fafafa;
-      padding: 40px 20px;
-      margin-top: 20px;
-      border-radius: 8px;
+    .donate-btn {
+      background-color: #b30000;
+      color: #fff;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
     }
 
-    .ethan {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .ethan img {
-      width: 120px;
-      border-radius: 50%;
-      box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-      margin-top: 40px;
+    .footer {
+      margin-top: 50px;
       font-size: 0.9rem;
-    }
-
-    .qr {
-      margin-top: 20px;
-    }
-
-    .qr img {
-      width: 120px;
+      color: #555;
+      padding-bottom: 30px;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Help Gaza's Children — Every Tether Counts</h1>
-    </header>
 
-    <div class="section">
-      <div class="donation-box">
-        <h2>Donate 10 USDT (TRC20)</h2>
-        <p>Every 10 Tether helps provide emergency aid, food, and shelter to displaced children in Gaza.</p>
-        <div class="wallet-address">TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</div>
-        <div class="qr">
-          <img src="images/qr-code.png" alt="Donate QR Code">
-        </div>
-      </div>
+  <div class="logo">GazaChildHope.org</div>
+
+  <div class="main">
+    <h1>They Lost Their Homes — Don't Let Them Lose Hope</h1>
+    <p>
+      Bombs destroyed their schools. Their homes turned to rubble.  
+      Parents gone. Nights full of fear.  
+      A child in Gaza now cries for warmth, for food, for a future.
+    </p>
+    <p>
+      We are volunteers. 100% of what you send helps these children.  
+      No middlemen. No politics. Just pure, human help.
+    </p>
+
+    <div class="wallet-box">
+      <strong>Donate 10 USDT (TRC20)</strong><br/>
+      <div class="wallet-address">TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</div><br/>
+      <a class="donate-btn" href="#">Copy Wallet Address</a>
     </div>
 
-    <div class="section trust-section">
-      <h2>Why You Can Trust Us</h2>
-      <p>This initiative is led by humanitarian volunteers and verified through full transparency. 100% of your donation goes directly to supporting affected families.</p>
-      <div class="ethan">
-        <img src="images/ethan.jpg" alt="Ethan Morgan">
-        <div>
-          <strong>Ethan Morgan</strong><br/>
-          Founder & Volunteer Coordinator<br/>
-          GazaChildHope.org
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      &copy; 2025 GazaChildHope.org — All Rights Reserved.
-    </footer>
+    <p><em>Led by volunteers. Verified by transparency. Powered by compassion.</em></p>
   </div>
+
+  <div class="footer">
+    &copy; 2025 GazaChildHope.org — Every Tether Counts.
+  </div>
+
 </body>
 </html>
