@@ -1,183 +1,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Help Gaza's children by donating Tether (TRC20). Every donation counts towards providing emergency aid, food, and shelter to displaced children in Gaza." />
-  <meta name="keywords" content="Gaza, children, donation, humanitarian aid, Tether, TRC20, emergency relief" />
-  <meta property="og:title" content="Help Gaza's Children — Every Tether Counts" />
-  <meta property="og:description" content="Your donation provides essential aid to children suffering in Gaza. Support them today." />
-  <meta property="og:image" content="images/gaza-background.jpg" />
-  <meta property="og:url" content="https://gazachildhope.github.io/Gazachildhope/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Help Gaza's Children" />
-  <meta name="twitter:description" content="Donate to support Gaza's children with your contribution today." />
-  <meta name="twitter:image" content="images/gaza-background.jpg" />
-  <title>Help Gaza's Children</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Donate to help children in Gaza get food, shelter, and emergency care. Every small support makes a big impact." />
+  <meta name="keywords" content="Gaza, children, donation, humanitarian aid, USDT, TRC20, crypto charity, help Gaza" />
+  <meta name="author" content="GazaChildHope Team" />
+  <title>Hope for Gaza's Children | Donate in USDT (TRC20)</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
-
     header {
-      background-image: url('images/gaza-background.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 0px 0px 10px #000;
+      background-color: #222;
+      color: #fff;
+      padding: 40px 20px;
       text-align: center;
     }
-
     header h1 {
-      font-size: 2.5rem;
-      max-width: 90%;
+      font-size: 2.4em;
+      margin: 0;
     }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .donation-box {
-      background-color: #fff;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    nav {
       text-align: center;
-    }
-
-    .wallet-address {
-      font-family: monospace;
-      background-color: #eee;
+      background-color: #444;
       padding: 10px;
-      border-radius: 5px;
-      display: inline-block;
-      margin: 10px 0;
     }
-
-    .trust-section {
-      background-color: #fafafa;
-      padding: 40px 20px;
-      margin-top: 20px;
-    }
-
-    .ethan {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .ethan img {
-      width: 120px;
-      border-radius: 50%;
-      box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #ddd;
-      margin-top: 40px;
-    }
-
-    .qr {
-      margin-top: 20px;
-    }
-
-    .qr img {
-      width: 120px;
-    }
-
-    .donate-button {
-      margin-top: 20px;
-      padding: 15px 30px;
-      background-color: #28a745;
-      color: white;
-      font-size: 1.2rem;
-      border-radius: 5px;
-      cursor: pointer;
+    nav a {
+      color: #fff;
+      margin: 0 15px;
       text-decoration: none;
     }
-
-    .donate-button:hover {
-      background-color: #218838;
+    .section {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
     }
-
-    .popup {
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.7);
+    .donate-btn {
+      background-color: #e74c3c;
       color: white;
-      padding: 20px;
-      border-radius: 8px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1em;
+      margin-top: 20px;
+    }
+    .wallet-box {
       display: none;
+      background-color: #f1f1f1;
+      padding: 15px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+      font-family: monospace;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>Help Gaza's Children — Every Tether Counts</h1>
-</header>
-
-<div class="section">
-  <div class="donation-box">
+  <header>
+    <h1>Feed. Shelter. Heal.</h1>
+  </header>  <nav>
+    <a href="#donate">Donate</a>
+    <a href="#impact">How Donations Help</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>  <div class="section" id="donate">
     <h2>Donate 10 USDT (TRC20)</h2>
-    <p>Every 10 Tether helps provide emergency aid, food, and shelter to displaced children in Gaza.</p>
-    <button class="donate-button" onclick="showWalletAddress()">Click to Copy Wallet Address</button>
-    <div id="wallet-popup" class="popup">
-      <p>Wallet Address: <span id="wallet-address">TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</span></p>
-      <button onclick="copyToClipboard()">Copy Address</button>
-    </div>
-    <div class="qr">
-      <img src="images/qr-code.png" alt="Donate QR Code">
-    </div>
-  </div>
-</div>
-
-<div class="trust-section">
-  <h2>Why You Can Trust Us</h2>
-  <p>This initiative is led by humanitarian volunteers and verified through full transparency. 100% of your donation goes directly to supporting affected families.</p>
-  
-  <div class="ethan">
-    <img src="images/ethan.jpg" alt="Ethan Morgan">
-    <div>
-      <strong>Ethan Morgan</strong><br/>
-      Founder & Volunteer Coordinator<br/>
-      GazaChildHope.org
-    </div>
-  </div>
-</div>
-
-<footer>
-  <p>Contact Us: <a href="mailto:contact@gazachildhope.org">contact@gazachildhope.org</a> | Follow us on <a href="https://www.instagram.com/gazachildhope">Instagram</a></p>
-  &copy; 2025 GazaChildHope.org — All Rights Reserved.
-</footer>
-
-<script>
-  function showWalletAddress() {
-    document.getElementById("wallet-popup").style.display = "block";
-  }
-
-  function copyToClipboard() {
-    const walletAddress = document.getElementById("wallet-address");
-    const range = document.createRange();
-    range.selectNode(walletAddress);
-    window.getSelection().addRange(range);
-    document.execCommand('copy');
-    alert("Wallet Address Copied to Clipboard!");
-  }
-</script>
-
-</body>
+    <p>Your donation helps provide displaced children in Gaza with life-saving aid, food, and shelter.</p>
+    <button class="donate-btn" onclick="toggleWallet()">Show Wallet Address</button>
+    <div class="wallet-box" id="walletBox">TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</div>
+  </div>  <div class="section" id="impact">
+    <h2>How Donations Are Used</h2>
+    <p>Each donation helps us purchase food packs, tents for shelter, and basic hygiene supplies. 100% of your contribution is directed to families affected by the ongoing crisis in Gaza. Every act of kindness is delivered directly to those who need it most.</p>
+  </div>  <div class="section">
+    <h2>Eyewitness to Suffering</h2>
+    <p>I walked down what used to be a school road, now reduced to rubble. Children sleep where homes once stood, parents search for food in ashes, and hope clings to plastic tents under a burning sky. No one can remain unmoved. That’s why I joined GazaChildHope.</p>
+  </div>  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>This initiative was started by Ethan Morgan, a humanitarian volunteer working closely with displaced families. Through transparent donations, we aim to deliver critical aid directly to those suffering in Gaza.</p>
+  </div>  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:gazachildhope@gmail.com">gazachildhope@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/gazachildhope" target="_blank">@gazachildhope</a></p>
+  </div>  <footer>
+    &copy; 2025 GazaChildHope — All Rights Reserved.
+  </footer>  <script>
+    function toggleWallet() {
+      var box = document.getElementById('walletBox');
+      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    }
+  </script></body>
 </html>
