@@ -2,109 +2,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GazaChildHope</title>
+  <title>Hope for Gaza</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      background-color: #fffdf8;
       color: #222;
+    }
+
+    header {
+      background-color: #aa0000;
+      color: white;
+      padding: 30px;
       text-align: center;
-      line-height: 1.6;
     }
 
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
     }
 
-    .main {
+    .section {
+      max-width: 800px;
+      margin: auto;
       padding: 40px 20px;
     }
 
-    .main h1 {
-      font-size: 2.2rem;
-      color: #b30000;
+    .section h2 {
+      color: #aa0000;
+    }
+
+    .donate-button {
+      display: inline-block;
+      background-color: #aa0000;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .impact {
+      background-color: #fff0f0;
+      padding: 25px;
+      border-left: 5px solid #aa0000;
+      margin-top: 50px;
+    }
+
+    .impact ul {
+      padding-left: 20px;
+    }
+
+    .impact li {
       margin-bottom: 10px;
     }
 
-    .main p {
-      font-size: 1.1rem;
-      max-width: 700px;
-      margin: 10px auto;
+    .contact {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.95rem;
     }
 
-    .wallet-box {
-      background-color: #fff;
-      padding: 20px;
-      margin: 30px auto;
-      display: inline-block;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .wallet-address {
-      font-family: monospace;
-      background-color: #eee;
-      padding: 10px;
-      border-radius: 4px;
-      margin: 15px 0;
-      display: inline-block;
-    }
-
-    .donate-btn {
-      background-color: #b30000;
-      color: #fff;
-      padding: 12px 25px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 10px;
+    .contact a {
       text-decoration: none;
-      display: inline-block;
+      color: #aa0000;
+      margin: 0 10px;
     }
 
-    .footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #555;
-      padding-bottom: 30px;
+    .icon {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      padding: 30px 10px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <div class="logo">GazaChildHope.org</div>
+<header>
+  <h1>Hope. Dignity. Survival.</h1>
+</header>
 
-  <div class="main">
-    <h1>They Lost Their Homes — Don't Let Them Lose Hope</h1>
-    <p>
-      Bombs destroyed their schools. Their homes turned to rubble.  
-      Parents gone. Nights full of fear.  
-      A child in Gaza now cries for warmth, for food, for a future.
-    </p>
-    <p>
-      We are volunteers. 100% of what you send helps these children.  
-      No middlemen. No politics. Just pure, human help.
-    </p>
+<div class="section">
+  <h2>About Us</h2>
+  <p>
+    My name is Ethan Morgan. I’m not Palestinian — I’m a volunteer.  
+    But I’ve walked through the rubble, shared meals with grieving families,  
+    and held the hands of children too shocked to cry.  
+    This project is for them.
+  </p>
+  <p>
+    In Gaza, bombs don’t just destroy buildings — they erase futures.  
+    We can’t wait for governments. We must act, now.
+  </p>
 
-    <div class="wallet-box">
-      <strong>Donate 10 USDT (TRC20)</strong><br/>
-      <div class="wallet-address">TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</div><br/>
-      <a class="donate-btn" href="#">Copy Wallet Address</a>
-    </div>
+  <a class="donate-button" href="#">Donate 10 USDT (TRC20)</a>
+</div>
 
-    <p><em>Led by volunteers. Verified by transparency. Powered by compassion.</em></p>
-  </div>
+<div class="section impact">
+  <h2>How Your Donation Helps</h2>
+  <ul>
+    <li>We buy food packs: rice, lentils, canned goods — enough for a family.</li>
+    <li>We provide tents and blankets for families with no roof.</li>
+    <li>We distribute hygiene kits to stop disease.</li>
+  </ul>
+  <p>
+    No staff. No office. Every Tether you give becomes relief, directly.
+  </p>
+</div>
 
-  <div class="footer">
-    &copy; 2025 GazaChildHope.org — Every Tether Counts.
-  </div>
+<div class="section contact">
+  <p>
+    <a href="mailto:gazachildhope@gmail.com">
+      <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email">Email Us
+    </a> |
+    <a href="https://instagram.com/gazachildhope" target="_blank">
+      <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">Instagram
+    </a>
+  </p>
+</div>
+
+<footer>
+  &copy; 2025 GazaChildHope.org — All rights reserved.
+</footer>
 
 </body>
 </html>
