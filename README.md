@@ -7,26 +7,30 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f2f2f2;
+      background-image: url('images/child.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: #333;
     }
 
+    .overlay {
+      background-color: rgba(255,255,255,0.88);
+      min-height: 100vh;
+    }
+
     header {
-      background-image: url('images/gaza-background.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 0px 0px 10px #000;
       text-align: center;
+      padding: 80px 20px 40px 20px;
+      color: #222;
+      text-shadow: 0px 0px 6px #fff;
     }
 
     header h1 {
       font-size: 2.5rem;
       max-width: 90%;
+      margin: auto;
     }
 
     .section {
@@ -56,6 +60,7 @@
       background-color: #fafafa;
       padding: 40px 20px;
       margin-top: 20px;
+      border-radius: 8px;
     }
 
     .ethan {
@@ -74,8 +79,9 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #ddd;
+      background-color: rgba(255, 255, 255, 0.8);
       margin-top: 40px;
+      font-size: 0.9rem;
     }
 
     .qr {
@@ -88,39 +94,38 @@
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <header>
+      <h1>Help Gaza's Children — Every Tether Counts</h1>
+    </header>
 
-<header>
-  <h1>Help Gaza's Children — Every Tether Counts</h1>
-</header>
-
-<div class="section">
-  <div class="donation-box">
-    <h2>Donate 10 USDT (TRC20)</h2>
-    <p>Every 10 Tether helps provide emergency aid, food, and shelter to displaced children in Gaza.</p>
-    <div class="wallet-address">TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</div>
-    <div class="qr">
-      <img src="images/qr-code.png" alt="Donate QR Code">
+    <div class="section">
+      <div class="donation-box">
+        <h2>Donate 10 USDT (TRC20)</h2>
+        <p>Every 10 Tether helps provide emergency aid, food, and shelter to displaced children in Gaza.</p>
+        <div class="wallet-address">TN6vQfPgbzam9EuBMtBYTxEPjbxWscvXD4</div>
+        <div class="qr">
+          <img src="images/qr-code.png" alt="Donate QR Code">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="trust-section">
-  <h2>Why You Can Trust Us</h2>
-  <p>This initiative is led by humanitarian volunteers and verified through full transparency. 100% of your donation goes directly to supporting affected families.</p>
-  
-  <div class="ethan">
-    <img src="images/ethan.jpg" alt="Ethan Morgan">
-    <div>
-      <strong>Ethan Morgan</strong><br/>
-      Founder & Volunteer Coordinator<br/>
-      GazaChildHope.org
+    <div class="section trust-section">
+      <h2>Why You Can Trust Us</h2>
+      <p>This initiative is led by humanitarian volunteers and verified through full transparency. 100% of your donation goes directly to supporting affected families.</p>
+      <div class="ethan">
+        <img src="images/ethan.jpg" alt="Ethan Morgan">
+        <div>
+          <strong>Ethan Morgan</strong><br/>
+          Founder & Volunteer Coordinator<br/>
+          GazaChildHope.org
+        </div>
+      </div>
     </div>
+
+    <footer>
+      &copy; 2025 GazaChildHope.org — All Rights Reserved.
+    </footer>
   </div>
-</div>
-
-<footer>
-  &copy; 2025 GazaChildHope.org — All Rights Reserved.
-</footer>
-
 </body>
 </html>
